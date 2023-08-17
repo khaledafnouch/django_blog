@@ -1,23 +1,17 @@
 {% extends 'base.html' %}
 
-
+{% load static %}
 {%  block content  %}
 <div class="container-xxl bg-white p-0">
-        <!-- Spinner Start 
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-        </div>  -->
-        <!-- Spinner End -->
+
 
 
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
-                    <h1 class="m-0"><i class="fa fa-search me-2"></i>SEO<span class="fs-5">Master</span></h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                    <h4 class="m-0">AFNOUCH<span class="fs-5">portfolio</span></h4>
+
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
@@ -38,8 +32,7 @@
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
-                    <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
-                    <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3">Pro Version</a>
+                   
                 </div>
             </nav>
 
@@ -47,13 +40,13 @@
                 <div class="container my-5 py-5 px-lg-5">
                     <div class="row g-5 py-5">
                         <div class="col-lg-6 text-center text-lg-start">
-                            <h1 class="text-white mb-4 animated zoomIn">All in one SEO tool need to grow your business rapidly</h1>
-                            <p class="text-white pb-3 animated zoomIn">Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam sit justo amet ipsum vero ipsum clita lorem</p>
+                            <h1 class="text-white mb-4 animated zoomIn">my personel portfolio </h1>
+                            <p class="text-white pb-3 animated zoomIn">hear you can find détails about khaled afnouch. i'm web developer and i love challenge and coding .Also  i apload some blog about coding and web Development, and if you want to see some project i apload it hear</p>
                             <a href="" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">Free Quote</a>
                             <a href="" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
                         </div>
                         <div class="col-lg-6 text-center text-lg-start">
-                            <img class="img-fluid" src="img/hero.png" alt="">
+                            <img class="img-fluid" src="{% static 'img/hero.png' %}" alt="">
                         </div>
                     </div>
                 </div>
@@ -87,10 +80,18 @@
                 <div class="row g-5">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="section-title position-relative mb-4 pb-2">
-                            <h6 class="position-relative text-primary ps-4">About Us</h6>
-                            <h2 class="mt-2">The best SEO solution with 10 years of experience</h2>
+                            <h6 class="position-relative text-primary ps-4">About me</h6>
+                            <h2 class="mt-2">i'm web developer with 10 years of experience</h2>
                         </div>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
+                        <p class="mb-4">   
+                        
+                        
+                        hear you can find détails about khaled afnouch. i'm web developer and i love challenge and coding .Also  i apload some blog about coding and web Development, and if you want to see some project i apload it hear
+                        
+                        
+                        
+                        
+                        </p>
                         <div class="row g-3">
                             <div class="col-sm-6">
                                 <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Award Winning</h6>
@@ -110,7 +111,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/about.jpg">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="{% static 'img/about.jpg' %}">
                     </div>
                 </div>
             </div>
@@ -131,7 +132,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 text-center mb-n5 d-none d-md-block">
-                        <img class="img-fluid mt-5" style="height: 250px;" src="img/newsletter.png">
+                        <img class="img-fluid mt-5" style="height: 250px;" src="{% static 'img/newsletter.png' %}">
                     </div>
                 </div>
             </div>
@@ -152,7 +153,7 @@
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa fa-home fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">SEO Optimization</h5>
+                            <h5 class="mb-3">Web Development</h5>
                             <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
                             <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
                         </div>
@@ -162,7 +163,7 @@
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa fa-home fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">Web Design</h5>
+                            <h5 class="mb-3">Responsive Design</h5>
                             <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
                             <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
                         </div>
@@ -172,7 +173,7 @@
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa fa-home fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">Social Media Marketing</h5>
+                            <h5 class="mb-3">Fullstuck Development</h5>
                             <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
                             <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
                         </div>
@@ -182,7 +183,7 @@
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa fa-home fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">Email Marketing</h5>
+                            <h5 class="mb-3">Django Development</h5>
                             <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
                             <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
                         </div>
@@ -192,7 +193,7 @@
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa fa-home fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">PPC Advertising</h5>
+                            <h5 class="mb-3">PHP Development</h5>
                             <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
                             <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
                         </div>
@@ -202,7 +203,7 @@
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa fa-home fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">App Development</h5>
+                            <h5 class="mb-3">JavaScript Development</h5>
                             <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
                             <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
                         </div>
@@ -232,9 +233,9 @@
                 <div class="row g-4 portfolio-container">
                     <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.1s">
                         <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                            <img class="img-fluid w-100" src="{% static 'img/portfolio-1.jpg' %}" alt="">
                             <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <a class="btn btn-light" href="{% static 'img/portfolio-1.jpg' %}" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
                                 <div class="mt-auto">
                                     <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
                                     <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
@@ -244,9 +245,9 @@
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item second wow zoomIn" data-wow-delay="0.3s">
                         <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
+                            <img class="img-fluid w-100" src="{% static 'img/portfolio-2.jpg' %}" alt="">
                             <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-2.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <a class="btn btn-light" href="{% static 'img/portfolio-2.jpg' %}" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
                                 <div class="mt-auto">
                                     <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
                                     <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
@@ -256,9 +257,9 @@
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.6s">
                         <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
+                            <img class="img-fluid w-100" src="{% static 'img/portfolio-3.jpg' %}" alt="">
                             <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-3.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <a class="btn btn-light" href="{% static 'img/portfolio-3.jpg' %}" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
                                 <div class="mt-auto">
                                     <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
                                     <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
@@ -268,9 +269,9 @@
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item second wow zoomIn" data-wow-delay="0.1s">
                         <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
+                            <img class="img-fluid w-100" src="{% static 'img/portfolio-4.jpg' %}" alt="">
                             <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-4.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <a class="btn btn-light" href="{% static 'img/portfolio-4.jpg' %}" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
                                 <div class="mt-auto">
                                     <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
                                     <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
@@ -280,9 +281,9 @@
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.3s">
                         <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="">
+                            <img class="img-fluid w-100" src="{% static 'img/portfolio-5.jpg' %} " alt="">
                             <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-5.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <a class="btn btn-light" href="{% static ' img/portfolio-5.jpg' %} " data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
                                 <div class="mt-auto">
                                     <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
                                     <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
@@ -292,9 +293,9 @@
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item second wow zoomIn" data-wow-delay="0.6s">
                         <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="">
+                            <img class="img-fluid w-100" src="{% static 'img/portfolio-6.jpg' %}" alt="">
                             <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-6.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                <a class="btn btn-light" href="{% static 'img/portfolio-6.jpg' %}" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
                                 <div class="mt-auto">
                                     <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
                                     <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
@@ -316,7 +317,7 @@
                         <i class="fa fa-quote-left fa-2x mb-3"></i>
                         <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 50px; height: 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'img/testimonial-1.jpg' %}" style="width: 50px; height: 50px;">
                             <div class="ps-3">
                                 <h6 class="text-white mb-1">Client Name</h6>
                                 <small>Profession</small>
@@ -338,7 +339,7 @@
                         <i class="fa fa-quote-left fa-2x mb-3"></i>
                         <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 50px; height: 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'img/testimonial-3.jpg' %}" style="width: 50px; height: 50px;">
                             <div class="ps-3">
                                 <h6 class="text-white mb-1">Client Name</h6>
                                 <small>Profession</small>
@@ -349,7 +350,7 @@
                         <i class="fa fa-quote-left fa-2x mb-3"></i>
                         <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-4.jpg" style="width: 50px; height: 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'img/testimonial-4.jpg' %}" style="width: 50px; height: 50px;">
                             <div class="ps-3">
                                 <h6 class="text-white mb-1">Client Name</h6>
                                 <small>Profession</small>
